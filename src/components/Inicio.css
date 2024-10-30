@@ -1,0 +1,15 @@
+.inicio-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.nombre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.nombre strong {
+    font-size: 50px;
+}
