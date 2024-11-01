@@ -1,26 +1,44 @@
 import './Header.css'
 
-export function Header () {
+export function Header (props) {
+  const { inicioIsVisible, biografiaIsVisible, toggleBiografia, toggleInicio } = props
+
+  function handleInicio () {
+    if (!inicioIsVisible) {
+      toggleInicio(true)
+      toggleBiografia(false)
+    }
+  }
+  function handleBiografia () {
+    if (!biografiaIsVisible) {
+      toggleBiografia(true)
+      toggleInicio(false)
+    }
+  }
+
   return (
     <header>
       <nav>
-        <div>
-          INICIO
+        <div onClick={handleInicio}>
+          <strong>INICIO</strong>
+        </div>
+        <div onClick={handleBiografia}>
+          <strong>BIOGRAFIA</strong>
         </div>
         <div>
-          DISCOGRAFIA
+          <strong>DISCOGRAFIA</strong>
         </div>
         <div>
-          VIDEOCLIPS
+          <strong>VIDEOCLIPS</strong>
         </div>
         <div>
-          SHOWS
+          <strong>SHOWS</strong>
         </div>
         <div>
-          IMAGENES
+          <strong>IMAGENES</strong>
         </div>
         <div>
-          CONTACTO
+          <strong>CONTACTO</strong>
         </div>
       </nav>
     </header>

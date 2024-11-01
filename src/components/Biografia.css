@@ -1,0 +1,72 @@
+.bio-container {
+    display: flex;
+    justify-content: center;
+}
+.bio-main {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+}
+.bio-container img {
+    width: 300px;
+}
+.bio-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: transparent;
+    margin-bottom: 20px;
+}
+.bio-header div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.bio-header div ul{
+    list-style: none;
+}
+.bio-main-D {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    align-items: center;
+    gap: 20px;
+}
+.bio-main-I {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    align-items: center;
+    gap: 20px;
+}
+.bio-main img {
+    opacity: 0;
+    transform: translateX(200px);
+    /* transform: rotateY(-90deg) translateX(-20px); */
+    transition: opacity 2s ease, transform 1s ease;
+}
+.bio-main p {
+    opacity: 0;
+    transform: rotateY(-90deg) translateX(-20px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+.bio-main.show img {
+    opacity: 1;
+    transform: translateX(0); /* Vuelve a su posición original */
+}
+.bio-main.show p {
+    opacity: 1;
+    transform: rotateY(0deg) translateX(0); /* Restaura la rotación */
+}
+/* Media query para pantallas pequeñas */
+@media (max-width: 720px) { /* Ajusta el ancho según tus necesidades */
+    .bio-main {
+        padding: 0;
+    }
+    .bio-main-D {
+        grid-template-columns: 2fr 2fr; /* Cambiar a 2fr 2fr en pantallas pequeñas */
+    }
+    .bio-main-I {
+        grid-template-columns: 2fr 2fr; /* Cambiar a 2fr 2fr en pantallas pequeñas */
+    }
+}
