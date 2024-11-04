@@ -1,18 +1,27 @@
 import './Header.css'
 
 export function Header (props) {
-  const { inicioIsVisible, biografiaIsVisible, toggleBiografia, toggleInicio } = props
+  const { inicioIsVisible, biografiaIsVisible, videoIsVisible, toggleBiografia, toggleInicio, toggleVideo } = props
 
   function handleInicio () {
     if (!inicioIsVisible) {
       toggleInicio(true)
       toggleBiografia(false)
+      toggleVideo(false)
     }
   }
   function handleBiografia () {
     if (!biografiaIsVisible) {
       toggleBiografia(true)
       toggleInicio(false)
+      toggleVideo(false)
+    }
+  }
+  function handleVideo () {
+    if (!videoIsVisible) {
+      toggleVideo(true)
+      toggleInicio(false)
+      toggleBiografia(false)
     }
   }
 
@@ -28,14 +37,8 @@ export function Header (props) {
         <div>
           <strong>DISCOGRAFIA</strong>
         </div>
-        <div>
+        <div onClick={handleVideo}>
           <strong>VIDEOCLIPS</strong>
-        </div>
-        <div>
-          <strong>SHOWS</strong>
-        </div>
-        <div>
-          <strong>IMAGENES</strong>
         </div>
         <div>
           <strong>CONTACTO</strong>

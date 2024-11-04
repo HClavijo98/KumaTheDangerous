@@ -1,0 +1,17 @@
+.video-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    gap: 50px;
+}
+.video-container div {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.video-container iframe {
+    width: auto;
+    height: auto;
+}

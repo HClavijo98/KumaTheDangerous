@@ -6,7 +6,14 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-}
-main {
-    height: 500px;
-}
+  }
+  
+  /* Ajuste para pantallas pequeñas */
+  @media (max-width: 768px) {
+    body {
+        background-size: cover;
+        background-position: 75% center; /* Ajusta para centrar la sección derecha */
+        background-attachment: fixed;
+    }
+  }
+  

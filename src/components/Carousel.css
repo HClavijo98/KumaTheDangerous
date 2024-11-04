@@ -1,0 +1,50 @@
+.carousel {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 800px; /* Cambia este valor según lo necesites */
+  margin: auto; /* Centra el carrusel en su contenedor */
+}
+
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel-image-wrapper {
+  min-width: 100%; /* Asegura que cada imagen ocupe todo el ancho */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.carousel-image {
+  max-width: 120%;
+  max-height: 100%;
+  object-fit: contain; /* Ajusta la imagen para que no se deforme */
+}
+
+.carousel-image.horizontal {
+  max-width: 100%; /* O cualquier valor que desees */
+  height: auto; /* Mantiene la relación de aspecto */
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.7);
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.left {
+  left: 10px;
+}
+
+.right {
+  right: 10px;
+}
