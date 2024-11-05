@@ -21,7 +21,7 @@ export function Inicio ({ inicioIsVisible }) {
                 src='https://static.wixstatic.com/media/f1d3a9_ee87ce02d3254b37af56e0d922790c03~mv2_d_6000_4000_s_4_2.png/v1/crop/x_390,y_1350,w_2370,h_930/fill/w_556,h_217,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/TITULO.png'
                 alt='Kuma The Dangerous'
               />
-              <strong>Official Website</strong>
+              <strong>Official Websitee</strong>
             </div>
             <img
               className='retrato d-none d-md-block'
