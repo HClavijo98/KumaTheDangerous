@@ -1,4 +1,7 @@
 import './Footer.css'
+import youtubeIcon from '../img/icons/youtube.png'
+import facebookIcon from '../img/icons/facebook.png'
+import instagramIcon from '../img/icons/instagram.png'
 
 export function Footer () {
   return (
@@ -6,13 +9,13 @@ export function Footer () {
       <div className='container'>
         <div className='icons'>
           <a href='https://www.facebook.com/kumadangerous'>
-            <img src='../src/img/icons/facebook.png' alt='Facebook' />
+            <img src={facebookIcon} alt='Facebook' />
           </a>
           <a href='https://www.instagram.com/kumathedangerous/'>
-            <img src='../src/img/icons/instagram.png' alt='Instagram' />
+            <img src={instagramIcon} alt='Instagram' />
           </a>
           <a href='https://www.youtube.com/channel/UCRAOeLMO3SccmLx-eIZYLEA?view_as=subscriber'>
-            <img src='../src/img/icons/youtube.png' alt='Youtube' />
+            <img src={youtubeIcon} alt='Youtube' />
           </a>
         </div>
         <p>Official Website</p>

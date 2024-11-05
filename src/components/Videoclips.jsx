@@ -25,8 +25,6 @@ export function Videoclips ({ videoIsVisible }) {
               allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
               allowFullScreen
             />
-          </div>
-          <div>
             <iframe
               src='https://www.youtube.com/embed/6-bI7_9_9ME?vq=hd1080'
               title='Rolo mi perro'

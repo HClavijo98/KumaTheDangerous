@@ -18,6 +18,9 @@
     justify-content: center;
     align-items: center;
 }
+.nombre img {
+    width: 80%;
+}
 .retrato {
     width: 100%;
 }
