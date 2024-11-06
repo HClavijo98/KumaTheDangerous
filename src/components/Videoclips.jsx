@@ -5,8 +5,10 @@ export function Videoclips ({ videoIsVisible }) {
     <div>
       {videoIsVisible && (
         <div className='video-container'>
-          <h1>VIDEOCLIPS</h1>
-          <div>
+          <div className='video-header'>
+            <h1>VIDEOCLIPS</h1>
+          </div>
+          <div className='video-main'>
             <iframe
               src='https://www.youtube.com/embed/ugUMNQjL9u8?vq=hd1080'
               title='Llamas'

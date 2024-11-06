@@ -34,25 +34,25 @@ export function Header (props) {
     <header>
       <div className='menu-toggle' onClick={() => setMenuOpen(!menuOpen)}>
         {/* Icono del menú hamburguesa */}
-        <span className={`bar ${menuOpen ? 'open' : ''}`}></span>
-        <span className={`bar ${menuOpen ? 'open' : ''}`}></span>
-        <span className={`bar ${menuOpen ? 'open' : ''}`}></span>
+        <span className={`bar ${menuOpen ? 'open' : ''}`} />
+        <span className={`bar ${menuOpen ? 'open' : ''}`} />
+        <span className={`bar ${menuOpen ? 'open' : ''}`} />
       </div>
       <nav className={`nav ${menuOpen ? 'open' : ''}`}>
         <div onClick={handleInicio}>
-          <strong>INICIO</strong>
+          INICIO
         </div>
         <div onClick={handleBiografia}>
-          <strong>BIOGRAFIA</strong>
+          BIOGRAFIA
         </div>
         <div>
-          <strong>DISCOGRAFIA</strong>
+          MUSICA
         </div>
         <div onClick={handleVideo}>
-          <strong>VIDEOCLIPS</strong>
+          VIDEOCLIPS
         </div>
         <div>
-          <strong>CONTACTO</strong>
+          CONTACTO
         </div>
       </nav>
     </header>

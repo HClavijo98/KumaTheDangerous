@@ -2,18 +2,29 @@ body {
     width: 100%;
     display: flex;
     justify-content: center;
-    background-image: url('./img/wallpaper.jpg');
+    background-image: url('./img/wallpaperH.jpg');
     background-size: cover;
-    background-position: center;
+    background-attachment: fixed;
+    /* background-position: center; */
     background-repeat: no-repeat;
   }
-  
+  p, strong, h2, li {
+    color: white;
+  }
+  h1 {
+    color: red;
+  }
   /* Ajuste para pantallas pequeñas */
-  @media (max-width: 768px) {
+  @media (max-width: 720px) {
     body {
+      background-image: url('./img/wallpaperV.jpg');
         background-size: cover;
-        background-position: 75% center; /* Ajusta para centrar la sección derecha */
+        /* background-position: 75% center; */
         background-attachment: fixed;
     }
+  }
+  .main {
+    display: flex;
+    justify-content: center;
   }
   

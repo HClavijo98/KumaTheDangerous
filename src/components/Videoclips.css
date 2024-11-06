@@ -1,12 +1,14 @@
 .video-container {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    
     align-items: center;
+    padding: 50px;
     gap: 50px;
+
 }
-.video-container div {
-    width: 100%;
+.video-main {
+    width: 70%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -15,4 +17,10 @@
 .video-container iframe {
     width: auto;
     height: auto;
+}
+@media (max-width: 720px) {
+    .video-container {
+        padding: 10px;
+        padding-top: 40px;
+    }
 }

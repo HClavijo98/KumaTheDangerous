@@ -38,11 +38,14 @@ h1 {
 #app {
   display: grid;
   min-height: 100dvh;
-  grid-template-rows: auto 1fr auto;
+  grid-template-rows: 1fr auto;
   width: 100vw;
-  max-width: 1280px;
   margin: 0 auto;
   text-align: center;
+}
+
+#app footer {
+  width: 100%;
 }
 
 .logo {

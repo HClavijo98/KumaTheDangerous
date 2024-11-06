@@ -1,14 +1,26 @@
 import './Inicio.css'
 import { useAnimation } from '../hooks/useAnimation'
 import { Carousel } from './Carousel.jsx'
+// import foto1 from '../img/kuma1.JPG'
+import foto2 from '../img/kuma2.jpg'
+import foto3 from '../img/kuma3.jpg'
+import foto4 from '../img/kuma4.jpg'
+import foto5 from '../img/kuma5.jpg'
+import foto6 from '../img/kuma6.jpg'
+import foto7 from '../img/kuma7.jpg'
+import foto8 from '../img/kuma8.jpg'
 
 export function Inicio ({ inicioIsVisible }) {
   const { isAnimating } = useAnimation(inicioIsVisible)
   const images = [
-    '../src/img/kuma1.jpg',
-    '../src/img/kuma2.jpg',
-    '../src/img/kuma3.jpg',
-    '../src/img/kuma4.jpg'
+    // foto1,
+    foto2,
+    foto3,
+    foto4,
+    foto5,
+    foto6,
+    foto7,
+    foto8
   ]
 
   return (
