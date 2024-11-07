@@ -2,14 +2,16 @@ import './Header.css'
 import { useState } from 'react' // Asegúrate de importar useState
 
 export function Header (props) {
-  const { inicioIsVisible, biografiaIsVisible, videoIsVisible, toggleBiografia, toggleInicio, toggleVideo } = props
+  const { inicioIsVisible, biografiaIsVisible, videoIsVisible, contactoIsVisible, musicaIsVisible, toggleBiografia, toggleInicio, toggleVideo, toggleContacto, toggleMusica } = props
   const [menuOpen, setMenuOpen] = useState(false) // Estado para el menú hamburguesa
 
   function handleInicio () {
     if (!inicioIsVisible) {
       toggleInicio(true)
       toggleBiografia(false)
+      toggleMusica(false)
       toggleVideo(false)
+      toggleContacto(false)
       setMenuOpen(false) // Cerrar el menú al seleccionar
     }
   }
@@ -17,7 +19,9 @@ export function Header (props) {
     if (!biografiaIsVisible) {
       toggleBiografia(true)
       toggleInicio(false)
+      toggleMusica(false)
       toggleVideo(false)
+      toggleContacto(false)
       setMenuOpen(false) // Cerrar el menú al seleccionar
     }
   }
@@ -26,6 +30,28 @@ export function Header (props) {
       toggleVideo(true)
       toggleInicio(false)
       toggleBiografia(false)
+      toggleMusica(false)
+      toggleContacto(false)
+      setMenuOpen(false) // Cerrar el menú al seleccionar
+    }
+  }
+  function handleContacto () {
+    if (!contactoIsVisible) {
+      toggleContacto(true)
+      toggleInicio(false)
+      toggleBiografia(false)
+      toggleMusica(false)
+      toggleVideo(false)
+      setMenuOpen(false) // Cerrar el menú al seleccionar
+    }
+  }
+  function handleMusica () {
+    if (!musicaIsVisible) {
+      toggleMusica(true)
+      toggleInicio(false)
+      toggleBiografia(false)
+      toggleVideo(false)
+      toggleContacto(false)
       setMenuOpen(false) // Cerrar el menú al seleccionar
     }
   }
@@ -45,13 +71,13 @@ export function Header (props) {
         <div onClick={handleBiografia}>
           BIOGRAFIA
         </div>
-        <div>
+        <div onClick={handleMusica}>
           MUSICA
         </div>
         <div onClick={handleVideo}>
           VIDEOCLIPS
         </div>
-        <div>
+        <div onClick={handleContacto}>
           CONTACTO
         </div>
       </nav>

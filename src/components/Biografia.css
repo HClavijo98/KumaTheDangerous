@@ -59,6 +59,7 @@
 /* Media query para pantallas pequeñas */
 @media (max-width: 720px) { /* Ajusta el ancho según tus necesidades */
     .bio-main {
+        width: 90%;
         padding: 0;
         padding-top: 40px;
     }

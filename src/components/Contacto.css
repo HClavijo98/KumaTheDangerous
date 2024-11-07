@@ -1,0 +1,26 @@
+.contacto-container {
+    padding: 50px;
+    display: flex;
+    align-items: center;
+}
+.contacto-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+}
+.contacto-content div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+@media (max-width: 720px) {
+    .contacto-container{
+        padding: 0;
+        padding-top: 40px;
+    }
+    .contacto-content {
+        flex-direction: column;
+        gap: 0;
+    }
+}

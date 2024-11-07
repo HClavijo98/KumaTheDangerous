@@ -7,8 +7,8 @@
 }
 .inicio-main {
     width: 70%;
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     justify-content: center;
 }
 .nombre {
@@ -24,7 +24,7 @@
 .retrato {
     width: 100%;
 }
-.nombre strong {
+.nombre h1 {
     font-size: 30px;
 }
 .inicio-container img {
@@ -47,5 +47,8 @@
     .inicio-container {
         padding: 0;
         padding-top: 50px;
+    }
+    .inicio-main {
+        grid-template-columns: 1fr;
     }
 }

@@ -1,6 +1,7 @@
 import './Inicio.css'
 import { useAnimation } from '../hooks/useAnimation'
 import { Carousel } from './Carousel.jsx'
+import kuma from '../img/kumaPortada.png'
 // import foto1 from '../img/kuma1.JPG'
 import foto2 from '../img/kuma2.jpg'
 import foto3 from '../img/kuma3.jpg'
@@ -33,16 +34,15 @@ export function Inicio ({ inicioIsVisible }) {
                 src='https://static.wixstatic.com/media/f1d3a9_ee87ce02d3254b37af56e0d922790c03~mv2_d_6000_4000_s_4_2.png/v1/crop/x_390,y_1350,w_2370,h_930/fill/w_556,h_217,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/TITULO.png'
                 alt='Kuma The Dangerous'
               />
-              <strong>Official Website</strong>
+              <h1>Official Website</h1>
             </div>
             <img
-              className='retrato d-none d-md-block'
-              src='https://static.wixstatic.com/media/f1d3a9_371ace91a912458da095833fd5291dfb~mv2_d_6000_4000_s_4_2.png/v1/crop/x_1741,y_0,w_3355,h_4000/fill/w_498,h_593,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/KUMA.png'
+              className='retrato'
+              src={kuma}
               alt='Retrato Kuma'
             />
           </div>
           <div>
-            <h1>IMAGENES</h1>
             <Carousel images={images} />
           </div>
         </div>

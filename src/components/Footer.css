@@ -1,36 +1,35 @@
 footer {
     min-width: 100%;
-    max-height: 200px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(255, 255, 255, 0.685);
-    border-top: 3px solid red;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    background-color: rgba(255, 0, 0, 0.397);
+    border-top: 1px solid white;
 }
-img {
-    width: 500px;
+footer div {
+    padding: 10px;
 }
-hr {
-    width: 100%;
-    color: red;
+a div {
+    background-color: white;
+    border-radius: 100px;
 }
-.container {
-    width: 300px;
+a div:hover {
+    background-color: rgba(255, 0, 0, 0.397);
+}
+.footer-main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: end;
     padding: 0;
     margin: 0;
     min-width: 200px;
 }
-.container p {
-    color: black;
-}
 .firma-img {
-    padding: 0;
-    margin: 0;
+    display: flex;
+    justify-content: start;
+}
+.firma-img img {
+    width: 50%;
 }
 .icons {
     display: flex;
@@ -39,4 +38,15 @@ hr {
 }
 .icons img {
     width: 25px;
+}
+@media (max-width: 720px) {
+    footer {
+        grid-template-columns: 1fr;
+    }
+    .footer-main {
+        align-items: center;
+    }
+    .firma-img img {
+        width: 100%;
+    }
 }
