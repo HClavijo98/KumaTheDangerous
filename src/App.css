@@ -12,7 +12,7 @@ body {
     color: white;
   }
   h1 {
-    color: red;
+    color: rgb(150, 0, 0);
   }
   ul {
     list-style: none;

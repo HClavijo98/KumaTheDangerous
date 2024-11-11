@@ -1,0 +1,26 @@
+.musica-main {
+    padding: 50px;
+}
+.musica-content {
+    width: 100%;
+    display: flex;
+
+}
+.song-list {
+    margin-top: 20px;
+    font-size: 16px;
+  }
+  
+  .song-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .song-list li {
+    cursor: pointer;
+    padding: 5px 0;
+  }
+  
+  .song-list li:hover {
+    text-decoration: underline;
+  }

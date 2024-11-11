@@ -6,7 +6,7 @@ header {
     top: 0; /* Posición en la parte superior de la ventana */
     left: 0;
     z-index: 1000; /* Asegura que esté encima de otros elementos */
-    border-bottom: 1px solid red;
+    border-bottom: 1px solid red
 }
 
 nav {
