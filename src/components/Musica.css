@@ -1,10 +1,48 @@
+.musica-container {
+  display: flex;
+  justify-content: center;
+}
 .musica-main {
-    padding: 50px;
+    padding-top: 50px;
+    width: 100%;
 }
 .musica-content {
     width: 100%;
     display: flex;
-
+    flex-direction: column;
+    justify-content: center;
+}
+.next-album {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+}
+.next-album h2 {
+  margin-right: 20px;
+  text-align: end;
+}
+.next-album img {
+  width: 50%;
+}
+.player {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+}
+.player div {
+  padding: 10px;
+}
+.album {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  justify-content: center;
+  align-content: center;
+}
+.album img {
+  width: 80%;
 }
 .song-list {
     margin-top: 20px;
@@ -24,3 +62,21 @@
   .song-list li:hover {
     text-decoration: underline;
   }
+
+  /* Media query para pantallas pequeñas */
+@media (max-width: 720px) { /* Ajusta el ancho según tus necesidades */
+  .musica-main {
+      width: 100%;
+      padding: 0;
+      padding-top: 40px;
+  }
+  .next-album {
+    grid-template-columns: 1fr;
+  }
+  .next-album h2 {
+    text-align: center;
+  }
+  .next-album img {
+    width: 100%;
+  }
+}

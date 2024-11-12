@@ -3,7 +3,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 50px;
+    padding-top: 50px;
 }
 .inicio-main {
     width: 70%;

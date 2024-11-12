@@ -16,11 +16,13 @@
     "vite": "^5.4.10"
   },
   "dependencies": {
+    "@madzadev/audio-player": "^2.1.14",
     "@vitejs/plugin-react": "4.3.3",
     "bootstrap": "^5.3.3",
     "react": "18.3.1",
     "react-bootstrap": "^2.10.5",
-    "react-dom": "18.3.1"
+    "react-dom": "18.3.1",
+    "react-player": "^2.16.0"
   },
   "eslintConfig": {
     "extends": "./node_modules/standard/eslintrc.json"

@@ -8,6 +8,7 @@ import { Contacto } from './components/Contacto.jsx'
 import { Musica } from './components/Musica.jsx'
 import { Footer } from './components/Footer.jsx'
 import { useState } from 'react'
+import '@madzadev/audio-player/dist/index.css'
 
 export function App () {
   const [inicioIsVisible, setInicioIsVisible] = useState(true)
