@@ -7,14 +7,14 @@ import lirik from '../img/liri-k ilegal.jpg'
 
 export function Musica ({ musicaIsVisible }) {
   const { isAnimating } = useAnimation(musicaIsVisible)
-  const [visiblePlayer, setVisiblePlayer] = useState(null)
+  const [visiblePlayer, setVisiblePlayer] = useState(1)
   const songs = [
-    { title: 'Kuma The Dangerous - 24 de Agosto', url: './src/tracks/24 de agosto.mp3', tags: ['house'] },
-    { title: 'Kuma The Dangerous - ROLO MI PERRO', url: './src/tracks/ROLO MI PERRO.mp3', tags: ['house'] }
+    { title: 'Kuma The Dangerous - 24 de Agosto', url: './src/tracks/24 de agosto.mp3', tags: ['trap'] },
+    { title: 'Kuma The Dangerous - ROLO MI PERRO', url: './src/tracks/ROLO MI PERRO.mp3', tags: ['reggaeton'] }
   ]
   const songs2 = [
-    { title: 'Kuma The Dangerous - Llamas', url: './src/tracks/Llamas.mp3', tags: ['house'] },
-    { title: 'Kuma The Dangerous - Que Hablen', url: './src/tracks/Que Hablen.mp3', tags: ['house'] }
+    { title: 'Kuma The Dangerous - Llamas', url: './src/tracks/Llamas.mp3', tags: ['rap'] },
+    { title: 'Kuma The Dangerous - Que Hablen', url: './src/tracks/Que Hablen.mp3', tags: ['rap'] }
   ]
 
   const handleImageClick = (playerId) => {
@@ -32,36 +32,39 @@ export function Musica ({ musicaIsVisible }) {
               <img src={NextAlbum} alt='Proximo album' />
             </div>
             <div className='player'>
-              <SoundPlayer songs={songs} />
-              <div>
-                <h2>ALBUMS</h2>
-                <div className='album'>
-                  <div className='album-img'>
-                    <img
-                      src={NextAlbum}
-                      alt='Proximo album'
-                      style={{ cursor: 'pointer' }}
-                      onClick={() => handleImageClick(1)}
-                    />
-                    <img
-                      src={lirik}
-                      alt='Proximo album'
-                      style={{ cursor: 'pointer' }}
-                      onClick={() => handleImageClick(2)}
-                    />
-                  </div>
-                  <div className='album-players'>
-                    {visiblePlayer === 1 &&
-                      <div>
-                        <h3>Songs</h3>
-                        <SoundPlayer songs={songs} />
-                      </div>}
-                    {visiblePlayer === 2 &&
-                      <div>
-                        <h3>Songs2</h3>
-                        <SoundPlayer songs={songs2} />
-                      </div>}
-                  </div>
+              <h2>ALBUMS</h2>
+              <div className='album'>
+                <div className='album-img'>
+                  <img
+                    src={NextAlbum}
+                    alt='Proximo album'
+                    style={{ cursor: 'pointer' }}
+                    onClick={() => handleImageClick(1)}
+                  />
+                  <img
+                    src={lirik}
+                    alt='Proximo album'
+                    style={{ cursor: 'pointer' }}
+                    onClick={() => handleImageClick(2)}
+                  />
+                  <img
+                    src={NextAlbum}
+                    alt='Proximo album'
+                    style={{ cursor: 'pointer' }}
+                    onClick={() => handleImageClick(1)}
+                  />
+                </div>
+                <div className='album-players'>
+                  {visiblePlayer === 1 &&
+                    <div>
+                      <img src={NextAlbum} alt='Proximo Album' />
+                      <SoundPlayer songs={songs} className='player' />
+                    </div>}
+                  {visiblePlayer === 2 &&
+                    <div>
+                      <img src={lirik} alt='Proximo Album' />
+                      <SoundPlayer songs={songs2} className='player' />
+                    </div>}
                 </div>
               </div>
             </div>

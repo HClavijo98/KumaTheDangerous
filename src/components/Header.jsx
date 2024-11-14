@@ -2,7 +2,7 @@ import './Header.css'
 import { useState } from 'react' // Asegúrate de importar useState
 
 export function Header (props) {
-  const { inicioIsVisible, biografiaIsVisible, videoIsVisible, contactoIsVisible, musicaIsVisible, toggleBiografia, toggleInicio, toggleVideo, toggleContacto, toggleMusica } = props
+  const { inicioIsVisible, biografiaIsVisible, videoIsVisible, musicaIsVisible, prodIsVisible, contactoIsVisible, toggleBiografia, toggleInicio, toggleVideo, toggleMusica, toggleProduccion, toggleContacto } = props
   const [menuOpen, setMenuOpen] = useState(false) // Estado para el menú hamburguesa
 
   function handleInicio () {
@@ -11,6 +11,7 @@ export function Header (props) {
       toggleBiografia(false)
       toggleMusica(false)
       toggleVideo(false)
+      toggleProduccion(false)
       toggleContacto(false)
       setMenuOpen(false) // Cerrar el menú al seleccionar
     }
@@ -21,6 +22,7 @@ export function Header (props) {
       toggleInicio(false)
       toggleMusica(false)
       toggleVideo(false)
+      toggleProduccion(false)
       toggleContacto(false)
       setMenuOpen(false) // Cerrar el menú al seleccionar
     }
@@ -31,6 +33,7 @@ export function Header (props) {
       toggleInicio(false)
       toggleBiografia(false)
       toggleMusica(false)
+      toggleProduccion(false)
       toggleContacto(false)
       setMenuOpen(false) // Cerrar el menú al seleccionar
     }
@@ -42,6 +45,7 @@ export function Header (props) {
       toggleBiografia(false)
       toggleMusica(false)
       toggleVideo(false)
+      toggleProduccion(false)
       setMenuOpen(false) // Cerrar el menú al seleccionar
     }
   }
@@ -50,6 +54,18 @@ export function Header (props) {
       toggleMusica(true)
       toggleInicio(false)
       toggleBiografia(false)
+      toggleVideo(false)
+      toggleProduccion(false)
+      toggleContacto(false)
+      setMenuOpen(false) // Cerrar el menú al seleccionar
+    }
+  }
+  function handleProduccion () {
+    if (!prodIsVisible) {
+      toggleProduccion(true)
+      toggleInicio(false)
+      toggleBiografia(false)
+      toggleMusica(false)
       toggleVideo(false)
       toggleContacto(false)
       setMenuOpen(false) // Cerrar el menú al seleccionar
@@ -76,6 +92,9 @@ export function Header (props) {
         </div>
         <div onClick={handleVideo}>
           VIDEOCLIPS
+        </div>
+        <div onClick={handleProduccion}>
+          PRODUCCION
         </div>
         <div onClick={handleContacto}>
           CONTACTO

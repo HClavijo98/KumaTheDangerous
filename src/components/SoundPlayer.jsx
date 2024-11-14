@@ -4,7 +4,7 @@ import { React } from 'react'
 
 export function SoundPlayer ({ songs }) {
   const colors = {
-    tagsBackground: '#3e32e4',
+    tagsBackground: '#960000',
     tagsText: '#ffffff',
     tagsBackgroundHoverActive: '#6e65f1',
     tagsTextHoverActive: '#ffffff',
@@ -24,14 +24,13 @@ export function SoundPlayer ({ songs }) {
     playlistBackground: '#18191f',
     playlistText: '#575a77',
     playlistBackgroundHoverActive: '#18191f',
-    playlistTextHoverActive: '#ffffff'
+    playlistTextHoverActive: '#960000'
   }
 
   return (
     <div className='sound-player'>
       <Player
         trackList={songs}
-        includeTags={false}
         customColorScheme={colors}
       />
     </div>

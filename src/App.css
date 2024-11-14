@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'Pricedown';
+  src: url('./pricedown bl.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 body {
     width: 100%;
     display: flex;
@@ -32,11 +38,5 @@ body {
     justify-content: center;
   }
 
-  @font-face {
-    font-family: 'Pricedown';
-    src: url('./src/fonts/pricedown bl.otf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-  }
   
   
