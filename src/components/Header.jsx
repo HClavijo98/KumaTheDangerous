@@ -85,16 +85,16 @@ export function Header (props) {
           INICIO
         </div>
         <div onClick={handleBiografia}>
-          BIOGRAFIA
+          BIOGRAFÍA
         </div>
         <div onClick={handleMusica}>
-          MUSICA
+          MÚSICA
         </div>
         <div onClick={handleVideo}>
           VIDEOCLIPS
         </div>
         <div onClick={handleProduccion}>
-          PRODUCCION
+          PRODUCCIÓN
         </div>
         <div onClick={handleContacto}>
           CONTACTO

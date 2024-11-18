@@ -23,6 +23,7 @@
 }
 .retrato {
     width: 100%;
+    animation: scaleLoop 3s ease-in-out infinite;
 }
 .nombre h1 {
     font-size: 20px;
@@ -33,15 +34,27 @@
     transform: rotateY(-90deg) translateX(-20px);
     transition: opacity 1.8s ease, transform 1.8s ease;
 }
-.inicio-container .retrato {
+/* .inicio-container .retrato {
     opacity: 0;
     transform: translateX(200px);
-    /* transform: rotateY(-90deg) translateX(-20px); */
+    transform: rotateY(-90deg) translateX(-20px);
     transition: opacity 2s ease, transform 1s ease;
-}
+} */
 .inicio-container.show img {
     opacity: 1;
     transform: translateX(0); /* Volver a su posición original */
+}
+/* Definición de la animación retrato */
+@keyframes scaleLoop {
+    0% {
+        transform: scale(0.9); /* Tamaño normal */
+    }
+    50% {
+        transform: scale(1.1); /* Aumenta un 5% */
+    }
+    100% {
+        transform: scale(0.9); /* Vuelve al tamaño original */
+    }
 }
 @media (max-width: 720px) {
     .inicio-container {

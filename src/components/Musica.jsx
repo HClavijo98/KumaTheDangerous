@@ -25,7 +25,7 @@ export function Musica ({ musicaIsVisible }) {
     <div className='musica-container'>
       {musicaIsVisible && (
         <div className={`musica-main ${isAnimating ? 'show' : ''}`}>
-          <h1>Musica</h1>
+          <h1>MÚSICA</h1>
           <div className='musica-content'>
             <div className='next-album'>
               <h2>¡ PROXIMO ALBUM !</h2>

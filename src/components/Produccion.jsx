@@ -7,7 +7,7 @@ export function Produccion ({ prodIsVisible }) {
     <div>
       {prodIsVisible && (
         <div className={`inicio-container ${isAnimating ? 'show' : ''}`}>
-          <h1>PRODUCCION</h1>
+          <h1>PRODUCCIÓN</h1>
         </div>
       )}
     </div>

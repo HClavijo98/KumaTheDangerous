@@ -12,7 +12,7 @@ export function Biografia ({ biografiaIsVisible }) {
       {biografiaIsVisible && (
         <div className={`bio-main ${isAnimating ? 'show' : ''}`}>
           <div className='bio-header'>
-            <h1>BIOGRAFIA</h1>
+            <h1>BIOGRAFÍA</h1>
             <div>
               <ul>
                 <li><strong>Origen: </strong>Bogota, Colombia</li>
