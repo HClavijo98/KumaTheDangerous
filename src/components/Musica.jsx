@@ -9,12 +9,12 @@ export function Musica ({ musicaIsVisible }) {
   const { isAnimating } = useAnimation(musicaIsVisible)
   const [visiblePlayer, setVisiblePlayer] = useState(1)
   const songs = [
-    { title: 'Kuma The Dangerous - 24 de Agosto', url: './src/tracks/24 de agosto.mp3', tags: ['trap'] },
-    { title: 'Kuma The Dangerous - ROLO MI PERRO', url: './src/tracks/ROLO MI PERRO.mp3', tags: ['reggaeton'] }
+    { title: 'Kuma The Dangerous - 24 de Agosto', url: 'public/tracks/24 de agosto.mp3', tags: ['trap'] },
+    { title: 'Kuma The Dangerous - ROLO MI PERRO', url: 'public/tracks/ROLO MI PERRO.mp3', tags: ['reggaeton'] }
   ]
   const songs2 = [
-    { title: 'Kuma The Dangerous - Llamas', url: './src/tracks/Llamas.mp3', tags: ['rap'] },
-    { title: 'Kuma The Dangerous - Que Hablen', url: './src/tracks/Que Hablen.mp3', tags: ['rap'] }
+    { title: 'Kuma The Dangerous - Llamas', url: 'public/tracks/Llamas.mp3', tags: ['rap'] },
+    { title: 'Kuma The Dangerous - Que Hablen', url: 'public/tracks/Que Hablen.mp3', tags: ['rap'] }
   ]
 
   const handleImageClick = (playerId) => {

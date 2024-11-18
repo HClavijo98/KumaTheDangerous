@@ -49,6 +49,9 @@
 .album-img img {
   width: 100%;
 }
+.album-players {
+  padding: 20px;
+}
 .album-players div img {
   width: 60%;
 }
