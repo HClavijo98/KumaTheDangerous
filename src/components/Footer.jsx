@@ -1,8 +1,8 @@
 import './Footer.css'
-import youtubeIcon from '../img/icons/youtube.png'
-import facebookIcon from '../img/icons/facebook.png'
-import instagramIcon from '../img/icons/instagram.png'
-import firma from '../img/firma.png'
+// import youtubeIcon from '../img/icons/youtube.png'
+// import facebookIcon from '../img/icons/facebook.png'
+// import instagramIcon from '../img/icons/instagram.png'
+// import firma from '../img/firma.png'
 
 export function Footer () {
   return (
@@ -14,7 +14,7 @@ export function Footer () {
             target='__blanket'
           >
             <div>
-              <img src={facebookIcon} alt='Facebook' />
+              <img src='img/icons/youtube.png' alt='Facebook' />
             </div>
           </a>
           <a
@@ -22,7 +22,7 @@ export function Footer () {
             target='__blanket'
           >
             <div>
-              <img src={instagramIcon} alt='Instagram' />
+              <img src='img/icons/youtube.png' alt='Instagram' />
             </div>
           </a>
           <a
@@ -30,7 +30,7 @@ export function Footer () {
             target='__blanket'
           >
             <div>
-              <img src={youtubeIcon} alt='Youtube' />
+              <img src='img/icons/youtube.png' alt='Youtube' />
             </div>
           </a>
         </div>
@@ -38,7 +38,7 @@ export function Footer () {
       </div>
       <div className='firma-img'>
         <img
-          src={firma}
+          src='img/icons/youtube.png'
           alt='Firma'
         />
       </div>

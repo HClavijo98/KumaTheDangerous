@@ -1,3 +1,4 @@
+import { Link } from 'wouter'
 import './Header.css'
 import { useState } from 'react' // Asegúrate de importar useState
 
@@ -81,12 +82,11 @@ export function Header (props) {
         <span className={`bar ${menuOpen ? 'open' : ''}`} />
       </div>
       <nav className={`nav ${menuOpen ? 'open' : ''}`}>
-        <div onClick={handleInicio}>
-          INICIO
-        </div>
-        <div onClick={handleBiografia}>
-          BIOGRAFÍA
-        </div>
+
+        <Link href='/KumaTheDangerous'>INICIO</Link>
+
+        <Link href='/biografia'>BIOGRAFÍA</Link>
+
         <div onClick={handleMusica}>
           MÚSICA
         </div>

@@ -22,14 +22,15 @@
     width: 80%;
 }
 .retrato {
-    width: 100%;
+    width: 300px; /* Establece un tamaño fijo para la imagen */
+  height: auto;
     animation: scaleLoop 3s ease-in-out infinite;
 }
 .nombre h1 {
     font-size: 20px;
 }
 .inicio-container img {
-    opacity: 0;
+    opacity: 1;
     /* transform: translateX(200px); */
     transform: rotateY(-90deg) translateX(-20px);
     transition: opacity 1.8s ease, transform 1.8s ease;
