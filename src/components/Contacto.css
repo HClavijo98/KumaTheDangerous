@@ -2,12 +2,13 @@
     padding-top: 50px;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 .contacto-content {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 50px;
+    gap: 80px;
 }
 .contacto-content div {
     display: flex;

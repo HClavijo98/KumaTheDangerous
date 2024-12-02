@@ -1,6 +1,6 @@
 import './Videoclips.css'
 
-export function Videoclips ({ videoIsVisible }) {
+export default function Videoclips () {
   const videos = [
     {
       title: 'Llamas',
@@ -29,23 +29,21 @@ export function Videoclips ({ videoIsVisible }) {
   ]
   return (
     <div>
-      {videoIsVisible && (
-        <div className='video-container'>
-          <h1>VIDEOCLIPS</h1>
-          <div className='video-main'>
-            {videos.map((video, index) => (
-              <iframe
-                key={index}
-                src={video.url}
-                title={video.title}
-                alt={video.title}
-                allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
-                allowFullScreen
-              />
-            ))}
-          </div>
+      <div className='video-container'>
+        <h1>VIDEOCLIPS</h1>
+        <div className='video-main'>
+          {videos.map((video, index) => (
+            <iframe
+              key={index}
+              src={video.url}
+              title={video.title}
+              alt={video.title}
+              allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+              allowFullScreen
+            />
+          ))}
         </div>
-      )}
+      </div>
     </div>
   )
 }

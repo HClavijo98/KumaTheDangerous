@@ -15,7 +15,8 @@ nav {
     justify-content: center;
 }
 
-nav div {
+nav a {
+    text-decoration: none;
     font-family: 'Pricedown';
     font-size: 20px;
     color: white;
@@ -24,7 +25,7 @@ nav div {
     cursor: pointer;
 }
 
-nav div:hover {
+nav a:hover {
     background-color: red;
     color: black;
 }

@@ -1,15 +1,9 @@
-import { useAnimation } from '../hooks/useAnimation'
-
-export function Produccion ({ prodIsVisible }) {
-  const { isAnimating } = useAnimation(prodIsVisible)
-
+export default function Produccion () {
   return (
     <div>
-      {prodIsVisible && (
-        <div className={`inicio-container ${isAnimating ? 'show' : ''}`}>
-          <h1>PRODUCCIÓN</h1>
-        </div>
-      )}
+      <div className='inicio-container show'>
+        <h1>PRODUCCIÓN</h1>
+      </div>
     </div>
   )
 }
