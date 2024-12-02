@@ -1,0 +1,1 @@
+.contacto-container{padding-top:50px;display:flex;align-items:center;justify-content:center}.contacto-content{display:flex;flex-direction:row;align-items:center;gap:80px}.contacto-content div{display:flex;flex-direction:column;justify-content:center}@media (max-width: 720px){.contacto-container{padding:40px 0 0}.contacto-content{flex-direction:column;gap:0}}
