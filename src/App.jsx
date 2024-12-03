@@ -47,7 +47,6 @@ export function App () {
         toggleProduccion={toggleProduccion} prodIsVisible={prodIsVisible}
         toggleContacto={toggleContacto} contactoIsVisible={contactoIsVisible}
       />
-      prueba
       <div className='main'>
         <Inicio inicioIsVisible={inicioIsVisible} />
         <Biografia biografiaIsVisible={biografiaIsVisible} />
